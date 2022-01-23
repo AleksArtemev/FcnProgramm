@@ -1,0 +1,18 @@
+﻿<Page x:Class="FcnProgramm.Page_List"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:FcnProgramm"
+      mc:Ignorable="d" 
+      d:DesignHeight="385" d:DesignWidth="215"
+      Title="Page_List">
+
+    <Grid Background="Wheat">
+        <Button x:Name="Page_Test" Content="Тест" MinWidth="35" Margin="10,10,125,295" FontFamily="Times New Roman" FontSize="22" ClickMode="Press"/>
+        <Button x:Name="Page_Dialogue" Content="Диалог" MinWidth="35" Margin="125,10,10,295" FontFamily="Times New Roman" FontSize="22" ClickMode="Press"/>
+        <Button x:Name="a1" Content="Ещё" MinWidth="35" Margin="10,126,125,179" FontFamily="Times New Roman" FontSize="22" ClickMode="Press"/>
+        <Button x:Name="a2" Content="Пара" MinWidth="35" Margin="125,126,10,179" FontFamily="Times New Roman" FontSize="22" ClickMode="Press"/>
+        <Button x:Name="a3" Content="Кнопок" MinWidth="35" Margin="10,252,10,53" FontFamily="Times New Roman" FontSize="22" ClickMode="Press"/>
+    </Grid>
+</Page>
