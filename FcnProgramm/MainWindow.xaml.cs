@@ -24,11 +24,6 @@ namespace FcnProgramm
         {
             InitializeComponent();
         }
-
-        private void Page_Test1(object sender, RoutedEventArgs e)
-        {
-            MyFrame.Content = new Page_Test();
-        }
         private void Exit_Button(object sender, RoutedEventArgs e)
         {
             Application.Current.Shutdown();

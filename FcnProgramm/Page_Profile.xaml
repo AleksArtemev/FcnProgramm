@@ -5,11 +5,15 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:FcnProgramm"
       mc:Ignorable="d" 
-      d:DesignHeight="385" d:DesignWidth="215"
+      d:DesignHeight="385" d:DesignWidth="800"
       Title="Page_Profile">
 
-    <Grid Background="Wheat">
-        <Button Content="Ваше фото" Margin="71,22,70,283" RenderTransformOrigin="0.5,0.5">
+    <Grid Background="#dde2e3">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="213*"/>
+            <RowDefinition Height="172*"/>
+        </Grid.RowDefinitions>
+        <Button Content="Ваше фото" Margin="70,10,610,104.174" RenderTransformOrigin="0.506,0.518">
             <Button.Template>
                 <ControlTemplate  TargetType="Button">
                     <Grid>
@@ -20,7 +24,12 @@
                 </ControlTemplate>
             </Button.Template>
         </Button>
-        <Button x:Name="a2" Content="Пара" MinWidth="35" Margin="10,126,10,179" FontFamily="Times New Roman" FontSize="22" ClickMode="Press"/>
-        <Button x:Name="a3" Content="Кнопок" MinWidth="35" Margin="10,252,10,53" FontFamily="Times New Roman" FontSize="22" ClickMode="Press"/>
+        <Border CornerRadius="15" BorderBrush="#FFC0C9D1" BorderThickness="10" Background="#FFC4D0D9" Margin="10,114,547,19.174">
+            <Button x:Name="a2" Content="Пара" Background="#FFC4D0D9" MinWidth="35" FontFamily="Times New Roman" FontSize="22" ClickMode="Press" BorderBrush="#FFC4D0D9"/>
+        </Border>
+        <Border CornerRadius="15" BorderBrush="#FFC0C9D1" BorderThickness="10" Background="#FFC4D0D9" Margin="10,7,547,85" Grid.Row="1">
+            <Button x:Name="a3" Content="Кнопок" MinWidth="35" Background="#FFC4D0D9" FontFamily="Times New Roman" FontSize="22" ClickMode="Press" BorderBrush="#FFC4D0D9"/>
+        </Border>
+        <Frame x:Name="MyFrame" Background="White" Margin="233,0,0,0" Grid.RowSpan="2"/>
     </Grid>
 </Page>

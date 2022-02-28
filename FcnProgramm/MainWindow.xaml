@@ -7,13 +7,18 @@
         mc:Ignorable="d"
         Title="RoundWindow" Height="450" Width="800" WindowStyle="None"
         AllowsTransparency="True" Background="Transparent" WindowStartupLocation="CenterScreen">
-    <Border CornerRadius="20" BorderBrush="Bisque" BorderThickness="5" Background="White">
+    <Border CornerRadius="20" BorderBrush="#72747a" BorderThickness="5" Background="#d1d9dc">
         <Grid>
             <Frame x:Name="MyFrame" Background="Transparent" Margin="275,171,10,10"/>
-            <StackPanel>
-                <Button x:Name="Page_Test" Content="Тест" Height="55" MinWidth="35" Margin="467,90,208,5" Width="115" FontFamily="Times New Roman" FontSize="22" ClickMode="Press" Click="Page_Test1"/>
-            </StackPanel>
-            <Button Content="X" Margin="750,0,0,400" Click="Exit_Button">
+            <Border CornerRadius="10" BorderBrush="#72747a" BorderThickness="5" Background="White" Margin="0,0,0,380"></Border>
+            <Border CornerRadius="5" BorderBrush="#FFC0C9D1" BorderThickness="5" Background="White" Margin="10,10,662,392">
+                <Button x:Name="Page_Profile" Content="Профиль" ClickMode="Press" Click="Page_Profile1" Background="#c4d0d9" BorderBrush="#FFC4D0D9"/>
+            </Border>
+            <Border CornerRadius="5" BorderBrush="#FFC0C9D1" BorderThickness="5" Background="White" Margin="133,10,539,392">
+            <Button x:Name="Page_List" Content="Список занятий" ClickMode="Press" Click="Page_List1" BorderBrush="#FFC4D0D9" Background="#FFC4D0D9"/>
+            </Border>
+            <Frame x:Name="MyFrameList" Background="Transparent" NavigationUIVisibility="Hidden" Margin="10,65,10,10"/>
+            <Button Content="X" Margin="740,5,5,390" Click="Exit_Button">
                 <Button.Template>
                     <ControlTemplate  TargetType="{x:Type Button}">
                         <Grid>
@@ -24,9 +29,6 @@
                     </ControlTemplate>
                 </Button.Template>
             </Button>
-            <Button x:Name="Page_Profile" Margin="10,10,680,400" Content="Профиль" ClickMode="Press" Click="Page_Profile1"/>
-            <Button x:Name="Page_List" Margin="125,10,565,400" Content="Список занятий" ClickMode="Press" Click="Page_List1"/>
-            <Frame x:Name="MyFrameList" Background="Bisque" Margin="10,45,565,10"/>
         </Grid>
     </Border>
 </Window>
