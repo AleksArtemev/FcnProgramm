@@ -1,0 +1,28 @@
+﻿<Page x:Class="FcnProgramm.Page2"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:FcnProgramm"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Page2">
+
+    <Grid>
+        <Grid Background="#dde2e3">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Frame x:Name="MyFrame12" Background="White" Navigated="MyFrame12_Navigated"/>
+            <Label Content="Достижения" HorizontalAlignment="Left" Margin="173,10,0,0" VerticalAlignment="Top" FontSize="36"/>
+            <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="100" Margin="21,88,0,0" Stroke="Black" VerticalAlignment="Top" Width="102"/>
+            <Label Content="Я знаю все" HorizontalAlignment="Left" Margin="21,188,0,0" VerticalAlignment="Top" FontSize="18" Width="102"/>
+            <Image Margin="40,97,408,183" Source="icon test.png" Stretch="Fill"/>
+            <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="97" Margin="21,241,0,0" Stroke="Black" VerticalAlignment="Top" Width="102"/>
+            <Image Margin="30,241,395,28" Source="58-580526_dialog-icon-png-transparent-png-removebg-preview.png" Stretch="Fill"/>
+            <Label Content="О вы из Англии" HorizontalAlignment="Left" Margin="15,333,0,0" VerticalAlignment="Top" FontSize="18" Width="138"/>
+        </Grid>
+        <Label Content="Выполните все тесты" HorizontalAlignment="Left" Margin="137,118,0,0" VerticalAlignment="Top" FontSize="24"/>
+        <Label Content="Выполните диалог" HorizontalAlignment="Left" Margin="146,278,0,0" VerticalAlignment="Top" FontSize="24"/>
+    </Grid>
+</Page>

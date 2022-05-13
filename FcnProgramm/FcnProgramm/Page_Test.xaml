@@ -1,0 +1,24 @@
+﻿<Page x:Class="FcnProgramm.Page_Test"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:FcnProgramm"
+      mc:Ignorable="d"
+      Title="Page_Test" Height="401.5" Width="600">
+    <Canvas Name="myCanvas" Background="#dde2e3">
+
+        <Label Name="scoreText" FontSize="18" Canvas.Left="10" Canvas.Top="10">Score: 0/10</Label>
+        <Label Name="numb" FontSize="18" Canvas.Left="324" Canvas.Top="10" Width="136">Question: 0/10</Label>
+
+        <TextBlock x:Name="txtQuestion" TextAlignment="Center" Padding="3" FontSize="20" Width="485" TextWrapping="Wrap" Canvas.Top="62" Text="Let's start a test !"/>
+
+        <Button Background="DarkGray" FontSize="18" Click="checkAnswer" Name="ans1" Width="160" Height="50" Content="Answer 1" Tag="0" Canvas.Left="22" Canvas.Top="178" />
+        <Button Background="DarkGray" FontSize="18" Click="checkAnswer" Name="ans2" Width="160" Height="50" Content="Answer 2" Tag="0" Canvas.Left="300" Canvas.Top="178" />
+        <Button Background="DarkGray" FontSize="18" Click="checkAnswer" Name="ans3" Width="160" Height="50" Content="Answer 3" Tag="0" Canvas.Left="22" Canvas.Top="262" />
+        <Button Background="DarkGray" FontSize="18" Click="checkAnswer" Name="ans4" Width="160" Height="50" Content="Answer 4" Tag="0" Canvas.Left="300" Canvas.Top="262"/>
+
+
+    </Canvas>
+</Page>
+
